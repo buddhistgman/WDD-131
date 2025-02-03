@@ -1,0 +1,47 @@
+body {
+    margin: auto;
+    grid-gap: 10px;
+    max-width: 1000px;
+    
+    display: grid;
+    
+    grid-template: 150px/ auto auto auto auto auto auto;
+    
+  }
+  p, li {
+    line-height: 1.8;
+  }
+  h1{
+    font-size: 56px;
+    letter-spacing: 5px;
+  }
+  h2{
+    font-size:24px;
+    letter-spacing: 5px;
+    color:rgb(52, 105, 169)
+  }
+  header {
+    
+    text-align: center;
+    border: 5px black;
+    grid-column: 2 / 5;
+    height: 350px;
+  } 
+  figure {
+    background: lightblue;
+    grid-column: 1 / 5;
+  }
+  
+  main {
+    grid-column: 2 / 5;
+    margin: 5px;
+    height: auto;
+    font-size: 36px;
+  }
+
+  footer{
+      text-align: center;
+      grid-column: 2 / 5;
+      
+      height: 250px;
+  }
