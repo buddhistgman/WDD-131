@@ -9,41 +9,40 @@
     
 </head>
     <body>
-        <div class="BottomCard">
-            <div class="BottomCardContent">
-                <div class="BottomText">
-                    <label for="securityCode">CVC/CVV</label><br>
-                    <input type="text" id="textbox" name="textbox" class="securityCodeInput" placeholder="XXX">
+        <div class="TopCard" style="z-index: 2;">
+            <div class="TopCardContent">  
+                <div class="TopMenu">
+                    <p>Total: $99.99</p>
                 </div>
-            </div>
+                <div class="CrdIcn">
+                    <img
+                        class="card-image"
+                        src="favicon.png"
+                        height="55px">
+                </div>
+                <div class="TopText">
+                    <label for="cardNumber">Card Number</label><br>
+                    <input type="text" id="textbox" name="textbox" class="cardNumberInput" placeholder="1234 5678 9101 1020">
+                </div>
+                <div class="cardHolder">
+                    <label for="cardholder">Cardholder</label><br>
+                    <input type="text" id="textbox" name="textbox" class="cardHolderInput" placeholder="John Doe">
+                </div>
+                <div class="expiryDate">
+                    <label for="expiry">Expiration</label><br>
+                    <input type="text" id="textbox" name="textbox" class="expiryDateInput" placeholder="MM">
+                    <input type="text" id="textbox" name="textbox" class="expiryDateInput" placeholder="YY">
+                </div>
         </div>
-        <div class="TopCard">
-            <div class="TopCardContent">
-            
-            <div class="TopMenu">
-                <p>Total: $99.99</p>
-            </div>
-            <div class="CrdIcn">
-                <img
-                    class="card-image"
-                    src="favicon.png"
-                    height="55px">
-            </div>
-            <div class="TopText">
-                <label for="cardNumber">Card Number</label><br>
-                <input type="text" id="textbox" name="textbox" class="cardNumberInput" placeholder="1234 5678 9101 1020">
-            </div>
-            <div class="cardHolder">
-                <label for="cardholder">Cardholder</label><br>
-                <input type="text" id="textbox" name="textbox" class="cardHolderInput" placeholder="John Doe">
-            </div>
-            <div class="expiryDate">
-                <label for="expiry">Expiration</label><br>
-                <input type="text" id="textbox" name="textbox" class="expiryDateInput" placeholder="MM">
-                <input type="text" id="textbox" name="textbox" class="expiryDateInput" placeholder="YY">
+    </div>
+    <div class="BottomCard" style="z-index: 1;">
+        <div class="BottomCardContent">
+            <div class="BottomText">
+                <label for="securityCode">CVC/CVV</label><br>
+                <input type="text" id="textbox" name="textbox" class="securityCodeInput" placeholder="XXX">
             </div>
         </div>
     </div>
-    
+    <button type="submit" class="submit-button">Submit</button>
     </body>
 </html>
