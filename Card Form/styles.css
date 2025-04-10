@@ -96,6 +96,20 @@
     justify-content: right;
     align-items: center;
 }
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+}
+
+#addParticipant {
+    grid-column: span 2; /* Make the button span both columns */
+    justify-self: center;
+}
+
+.hide {
+    display: none;
+}
 .submit-button {
     position: absolute;
     top: 80%;
